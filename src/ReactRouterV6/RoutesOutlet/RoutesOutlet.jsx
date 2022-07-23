@@ -11,6 +11,7 @@ const ComponentWithOutlet = () => {
     <div className={s.basicContainer}>
       <Routes>
         <Route path="/" element={<MainContentOutletInside />}>
+          {/*в outlet помещается содержимое между верхними (родительскими) Route*/}
           <Route index element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/blog" element={<BlogPage />} />
