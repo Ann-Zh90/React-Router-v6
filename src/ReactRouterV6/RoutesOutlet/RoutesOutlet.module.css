@@ -33,3 +33,7 @@
 .mainContainer {
   margin: 0 20px 0 20px;
 }
+
+.header .activeLink {
+  color: red;
+}
