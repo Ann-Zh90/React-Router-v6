@@ -1,0 +1,35 @@
+.basicContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.header,
+.footer {
+  background-color: rgb(77, 75, 75);
+  text-align: center;
+  padding: 8px;
+  color: #fff;
+}
+
+.header a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.header a:not(:last-child) {
+  padding-right: 30px;
+}
+
+.main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mainContainer {
+  margin: 0 20px 0 20px;
+}

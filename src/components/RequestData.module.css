@@ -1,0 +1,38 @@
+.basic {
+  background-color: rgb(210, 229, 245, 1);
+}
+.preloader {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin: 0;
+  padding-top: 10px;
+  text-align: center;
+  color: rgb(60 88 124);
+}
+
+.task_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.task_item {
+  width: 900px;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 6px;
+  color: rgb(60 88 124);
+}
+
+.task_item_completed {
+  text-decoration: line-through;
+  background-color: rgb(232 237 241);
+}
