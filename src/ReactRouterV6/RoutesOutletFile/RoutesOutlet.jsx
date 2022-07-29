@@ -1,16 +1,16 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import HomePage from "./HomePage";
-import AboutPage from "./AboutPage";
-import BlogPage from "./BlogPage";
-import Post from "./Post_useNavigate";
-import MainContentOutletInside from "./MainContentOutletInside";
-import EditPost from "./EditPost";
+import HomePage from "../HomePage";
+import AboutPage from "../AboutPage";
+import BlogPage from "../BlogPage/BlogPage";
+import Post from "../Post_useNavigate";
+import MainContentOutletInside from "../MainContentOutletInside";
+import EditPost from "../EditPost";
 
 import s from "./RoutesOutlet.module.css";
-import CreatePost from "./CreatePost";
-import RequireAuth from "./hoc/RequireAuth";
-import LoginPage from "./LoginPage";
-import { AuthProvider } from "./hoc/AuthProvider";
+import CreatePost from "../CreatePost";
+import RequireAuth from "../hoc/RequireAuth";
+import LoginPage from "../LoginPage";
+import { AuthProvider } from "../hoc/AuthProvider";
 
 const ComponentWithOutlet = () => {
   return (

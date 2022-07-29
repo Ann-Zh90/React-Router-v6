@@ -1,5 +1,5 @@
 import { Outlet, Link, NavLink } from "react-router-dom";
-import s from "./RoutesOutlet.module.css";
+import s from "./RoutesOutletFile/RoutesOutlet.module.css";
 
 const setActive = ({ isActive }) => (isActive ? `${s.activeLink}` : ""); // можно передать в className непосредственно функцию (blog), а можно константу с этой функцией (about)
 
