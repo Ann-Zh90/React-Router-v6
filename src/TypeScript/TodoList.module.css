@@ -1,0 +1,18 @@
+.header {
+  text-align: center;
+  padding: 5px 0;
+  font-weight: 800;
+  font-size: larger;
+  background-color: rgb(106, 129, 134);
+  color: #fff;
+}
+.todoList {
+  list-style: none;
+}
+.todoItem {
+  padding: 2px 0;
+}
+
+.completed {
+  text-decoration: line-through;
+}
