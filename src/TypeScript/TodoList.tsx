@@ -5,6 +5,7 @@ import { ITodoItem } from "./types";
 
 import s from "./TodoList.module.css";
 import TodoItem from "./TodoItem";
+import UseRefTypeization from "./UseRefTypeization";
 
 const TodoList: FC = () => {
   const [todoList, setTodoList] = useState<ITodoItem[]>([]);
@@ -38,23 +39,20 @@ const TodoList: FC = () => {
     });
   };
 
+  const todoItemsList = todoList.map((todoItem) => (
+    <TodoItem
+      todoItem={todoItem}
+      checkHandler={checkHandler}
+      key={todoItem.id}
+    />
+  ));
+
   return (
     <div>
       <header className={s.header}>Todo List</header>
+      <UseRefTypeization />
       {error && <div>{error}</div>}
-      {!error && (
-        <ul className={s.todoList}>
-          {todoList
-            .filter((i) => i.id < 20)
-            .map((todoItem) => (
-              <TodoItem
-                todoItem={todoItem}
-                checkHandler={checkHandler}
-                key={todoItem.id}
-              />
-            ))}
-        </ul>
-      )}
+      {!error && <ul className={s.todoList}>{todoItemsList}</ul>}
     </div>
   );
 };
