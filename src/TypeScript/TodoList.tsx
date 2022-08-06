@@ -1,11 +1,9 @@
 import React, { FC } from "react";
 import { useState, useEffect } from "react";
-
 import { ITodoItem } from "./types";
+import TodoItem from "./TodoItem";
 
 import s from "./TodoList.module.css";
-import TodoItem from "./TodoItem";
-import UseRefTypeization from "./UseRefTypeization";
 
 const TodoList: FC = () => {
   const [todoList, setTodoList] = useState<ITodoItem[]>([]);
@@ -49,8 +47,6 @@ const TodoList: FC = () => {
 
   return (
     <div>
-      <header className={s.header}>Todo List</header>
-      <UseRefTypeization />
       {error && <div>{error}</div>}
       {!error && <ul className={s.todoList}>{todoItemsList}</ul>}
     </div>

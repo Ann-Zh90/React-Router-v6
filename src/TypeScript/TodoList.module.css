@@ -1,11 +1,19 @@
 .header {
   text-align: center;
   padding: 5px 0;
+  background-color: rgb(106, 129, 134);
+  margin-bottom: 5px;
+}
+
+.header a {
   font-weight: 800;
   font-size: larger;
-  background-color: rgb(106, 129, 134);
   color: #fff;
-  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.header a:not(:last-child) {
+  margin-right: 15px;
 }
 .todoList {
   list-style: none;
